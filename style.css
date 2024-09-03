@@ -1,0 +1,557 @@
+:root {
+    --background-color: #240303; /* Replace with your desired color */
+}
+
+
+body{
+    margin: 20;
+    padding-top:1px ;
+    background-color: var(--background-color);
+}
+/* apply font only headers */
+header{
+    background-color: blanchedalmond;
+    padding: 5px;
+    background: linear-gradient(to right, #e2f2ab, #61d0ff, #d8c515, #4c6bf9, #f81616);
+    text-align: center !important;
+    border-bottom: 2px solid #ccc;
+    position: sticky;
+    top: 0;
+    left:0;
+    width:100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+header h1, header p{
+    font-family:'Edu VIC WA NT Beginner',sans-serif;
+}
+header p{
+    color: #131212;
+    text-align: center;
+    font-weight: bold;
+}
+nav{
+    /*background-color:#333333;*/
+    padding: 10px 0;
+    text-shadow: 
+    0 0 5px #61e486,   /* Outer glow */
+    0 0 10px #e5f065f1,  /* Outer glow */
+    0 0 15px #df60f3,  /* Outer glow */
+    0 0 15px #5bb6ec,  /* Outer glow */
+    0 0 30px #58d3f5,  /* Outer glow */
+    0 0 30px #26e6ad; /* Outer glow */
+
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 10;
+    text-align: center ;
+}
+nav ul li{
+    display:inline-block;
+    margin: 0 30px;
+}
+nav a
+{
+    color: rgb(120, 214, 235);
+    text-decoration: none;/*remove underline */
+    font-size: 1.1rem;
+
+}
+nav a:hover{
+    text-decoration:underline;/* Underline on hover */
+    color:#ffffff;
+    transform: scale(1.1); /* Scale up slightly */
+    opacity: 0.8; /* Slightly fade */
+    border-bottom: 2px solid #007bff;
+}
+#hero{
+    height: 100vh;
+    /*background: linear-gradient(135deg, #ffafbd, #ffc3a0);*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #e1d0e5;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  
+}
+.hero-content{
+    max-width: 600px;
+
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it's behind other content */
+  }
+  
+  .hero-content {
+    position: relative; /* Keep your content above the particles */
+    z-index: 1;
+    /* Add any other styling you need for your hero content */
+  }
+  
+#hero h2{
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+    color: rgb(226, 218, 218);
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#hero p{
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: rgb(239, 221, 236);
+    text-shadow: 
+    0 0 5px #f02929,   /* Outer glow */
+    0 0 10px #4fe925,  /* Outer glow */
+    0 0 15px #67c4d7,  /* Outer glow */
+    0 0 15px #d23db9,  /* Outer glow */
+    0 0 30px #c9ed60,  /* Outer glow */
+    0 0 30px #e64444; /* Outer glow */
+    
+}
+
+    #hero .btn {
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        border-top-left-radius: 1px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 1px;
+        font-size: 1.2em;
+        background: linear-gradient(45deg, #ff6b6b, #f7e04d);
+            color: rgb(255, 255, 255);
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    #hero .btn:hover {
+        transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    #about{
+        padding: 20px 20px;
+         /* background-color:#ead7bc;*/
+        align-items: center;
+        display: flex;
+        color: #427714;
+        justify-content: center;
+        flex-direction : column;
+        
+    }
+    #about h2{
+        font-size: 2.5rem;
+        font-family: 'Edu VIC WA NT Beginner', sans-serif;;
+        margin-bottom: 20px;
+        color:#d86de6;
+        color: #fff; /* Text color for neon */
+       justify-content: center;
+        text-shadow: 
+        0 0 5px #2df30a,   /* Outer glow */
+        0 0 10px #acda2e,  /* Outer glow */
+        0 0 15px #41f521,  /* Outer glow */
+        0 0 30px #ec822c,  /* Outer glow */
+                0 0 40px #5c973e,  /* Outer glow */
+                0 0 50px #0cd80c;  /* Outer glow */
+
+    }
+    #about p{
+        font-size: 1.2rem;
+        line-height: 1.0;
+        color: rgb(70, 135, 119);
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .about-container{
+        display:flex;/*side by side*/
+        align-items: center;
+        justify-content:center;
+        gap:200px;
+        margin: 0 auto;
+        max-width: 1200px;
+        width:100%;
+      
+
+
+    }
+    .about-content{
+        width:300px;
+        height:300px;
+        border-radius: 30%;
+        background-color:whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+        padding: 30px;
+        box-sizing: border-box;
+        overflow: hidden;
+        line-height: 1.9;
+        font-size: 14px;
+        font-family: cursive;
+        box-shadow: 
+        0 0 5px #f1f0f6,   /* Outer glow */
+        0 0 10px #f6c3c3,  /* Outer glow */
+        0 0 15px #d9640a,  /* Outer glow */
+        0 0 20px #b8e329,  /* Outer glow */
+        0 0 30px #edd2e0,  /* Outer glow */
+        0 0 40px #e53b3b,  /* Outer glow */
+        0 0 50px #c3e6b8;  /* Outer glow */
+
+
+    }
+    .image-box{
+        width:50%;
+        height: 50%;
+        overflow: hidden;
+        display: flex;
+
+        border-radius: 47%;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 6px -2px #f6eff8;
+    }
+    .image-box img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    #project {
+        min-height:4000%;
+        /*background-color: #f1e9f0;*/
+    }
+    #project h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        margin-left: 50px;
+        align-items: center;
+        color:#d86de6;
+        color: #f1fdf1; /* Text color for neon */
+       justify-content: center;
+       font-family: 'Edu VIC WA NT Beginner', sans-serif;
+       text-shadow: 
+       0 0 5px #f1f0f6,   /* Outer glow */
+       0 0 10px #f6c3c3,  /* Outer glow */
+       0 0 15px #dcdbd7e6,  /* Outer glow */
+       0 0 20px #fef8fb,  /* Outer glow */
+       0 0 30px #edd2e0,  /* Outer glow */
+       0 0 40px #ea92be,  /* Outer glow */
+       0 0 50px #f7f3f5;  /* Outer glow */
+               z-index: 30;
+    }
+
+    .projects-section{
+   padding: 40px 20px;
+   margin-top: 9px;
+    /*background-color: #614505;*/
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    
+    }
+    .project{
+        flex: 1;
+        background-color:#012732;
+       padding: 20px;
+       border:1px solid #ddd;
+        border-radius: 80px;
+        margin: 10px;
+        min-width: 300px;
+        box-shadow: 0 4px 6px rgba(235, 221, 221, 0.1);
+        transition: transform 0.3s ease,box-shadow 0.3ease;
+        box-shadow: 
+        0 0 5px #f1f0f6,   /* Outer glow */
+        0 0 10px #f6c3c3,  /* Outer glow */
+        0 0 15px #1d0af3,  /* Outer glow */
+        0 0 20px #cf8faf,  /* Outer glow */
+        0 0 30px #edd2e0,  /* Outer glow */
+        0 0 40px #ea92be,  /* Outer glow */
+        0 0 50px #ec93c0;  /* Outer glow */
+    }
+        .project img{
+            width:90%;
+            height: 350px;
+            border-radius: 38px;
+            margin-bottom: 15px;    
+        }
+        .project-title a {
+            text-decoration: none;
+            color: #ff5733; /* Example color */
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .project-title a:hover {
+            text-decoration: underline;
+            color: #e04e2f; /* Darker color on hover */
+        }
+        
+        
+        
+    .project h3{
+        font-size: 1.5rem;
+        display: center;
+        margin-bottom: 10px;
+        color: #f0ede1;
+        font-family:  'Edu VIC WA NT Beginner', sans-serif;
+    }
+    .project p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color:#f1e5e5;
+        line-height: 1.6;
+
+    }
+
+.project:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(89, 89, 97, 0.16);
+
+}
+#skills {
+    padding: 20px;
+   /* background-color: #f2f0df;*/
+    overflow: hidden;
+}
+#skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:  'Edu VIC WA NT Beginner', sans-serif;
+    font-size: 2.5rem;
+    color: #fff; /* Text color for neon */
+    
+    text-shadow: 
+    0 0 5px #1d0af3,   /* Outer glow */
+    0 0 10px #da2e62,  /* Outer glow */
+    0 0 15px #1d0af3,  /* Outer glow */
+    0 0 30px #f322e1,  /* Outer glow */
+            0 0 40px #ff0081,  /* Outer glow */
+            0 0 50px #9b2f8c;  /* Outer glow */
+}
+.skills-container{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills {
+    display: flex;
+     justify-content: center;
+     width: 150px;
+     height: 150px;
+        align-items: center;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       
+
+}
+.circle {
+    position:relative;
+    width: 120px;
+    height: 120px;
+    margin: 35px;
+    border-radius: 50%;
+    background: #111;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 20px #8bee0a,0 0 30px #00f0ff ,0 0 40px #d7f31e;
+    
+}
+
+.wave {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg,#f39bef,#d2e873,#fa3257);/*neon graddient*/
+    filter:blur(5px);
+    box-shadow:  0 0 20px #00f0ff,0 0 30px #00f0ff,0 0 40px #f1b7d5;
+    transform-origin: bottom;
+    animation:wave-animation 2.7s  infinite linear;
+    opacity: 0.8;
+}
+.circle[data-percent="70"] .wave{
+    background: linear-gradient(45deg,#0a28d7, #e9697e);
+    height:80%;
+}
+.circle[data-percent="80"] .wave{
+   background:linear-gradient(45deg,#c0d00d,#0e010e);
+    height:70%;
+}
+.circle[data-percent="65"] .wave{
+    height:65%;
+    background: linear-gradient(45deg,#FF66B2, #181816);
+}
+
+.circle[data-percent="60"] .wave
+{
+    background: linear-gradient(45deg,#7c28c9, #e9e913);
+   height:60%;
+}
+.circle[data-percent="78"] .wave
+{
+    background: linear-gradient(45deg,#d1cedf,#fd8d96);
+    height:78%;
+}
+@keyframes wave-animation {
+    0% {
+        transform: scale(1) translateY(0);
+    }
+    50% {
+        transform: scale(1.1) translateY(-10%);
+    }
+    100% {
+        transform: scale(1) translateY(0);
+    }
+}
+
+.circle span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    text-shadow: 0 0 10px #00f0ff,0 0 20px #ff00ff,0 0 30px #465946;
+}
+/*  contact */
+#contact{
+   /* background:linear-gradient(135deg,#f2f2f2,#e6e6e6);*/
+    padding: 50px;
+    text-align: center;
+}
+ #contact h2{
+
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color:#1d0af3;
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;}
+    #contact h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #fff; /* Text color for neon */
+        font-family: 'Edu VIC WA NT Beginner', sans-serif;
+        text-shadow: 
+            0 0 5px #1d0af3,   /* Outer glow */
+            0 0 10px #1d0af3,  /* Outer glow */
+            0 0 15px #1d0af3,  /* Outer glow */
+            0 0 20px #ff0081,  /* Outer glow */
+            0 0 30px #ff0081,  /* Outer glow */
+            0 0 40px #ff0081,  /* Outer glow */
+            0 0 50px #ff0081;  /* Outer glow */
+    }
+    
+
+
+#contact p{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-family: cursive;
+}
+.contact-cards{
+    display :flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-card{
+    background: #f7f7f7;
+    border-radius: 70px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+     padding:20px;
+     text-align: center;
+     margin:20px;
+     width:200px;
+     transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+.contact-card:hover{
+    transform:translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.contact-card i{
+    font-size:3em;
+    color:#333;
+    margin-bottom:10px;
+}
+.contact-card h3{
+    font-size: 1em;
+    color:#333;
+    margin-bottom: 10px;
+}
+.contact-card p{
+    font-size: 1em;
+    
+}
+.contact-card a{
+    color:#007BFF;
+    text-decoration:none;
+    font-weight: bold;
+    font-size: small;
+}
+.contact-card a:hover{
+    text-decoration:underline;
+}
+.contact-card{
+    border: 2px solid  #FF00FF; #00FF00; /* Neon green border */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 7px;
+    box-shadow: 0 0 10px rgba(111, 206, 214, 0.8); /* Neon glow effect */
+  }
+  
+  .contact-card:hover {
+    border-color: #e5f10a; /* Change border color on hover for added effect */
+    box-shadow: 0 0 15px rgba(255, 0, 255, 1); /* Intensified glow effect on hover */
+  }
+  
+  @media (max-width: 480px) {
+    .about-content h2 {
+      font-size: 1.2em;
+    }
+  
+    .about-content p {
+      font-size: 0.8em;
+    }
+  }
